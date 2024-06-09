@@ -20,7 +20,6 @@ Fridge_Master is python & Django based recipe recommendating website. Unlike exi
     }
 
 2.  run schema.sql, schema_ins.sql, schema_upd.sql in your database
-3.  run sql_ddl/ddl-customers-001-add.sql in your database.
 
 Example:
 
