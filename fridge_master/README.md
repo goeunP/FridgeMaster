@@ -51,3 +51,8 @@ Activate virtual environment in folder
     pip install django
 
     pip install psycopg2
+
+### Create a new migration & committed the new migration to DB
+    python manage.py makemigrations
+    
+    python manage.py migrate
