@@ -19,17 +19,8 @@ Fridge_Master is python & Django based recipe recommendating website. Unlike exi
     'PASSWORD':'password of that database'
     }
 
-2.  run schema.sql, schema_ins.sql, schema_upd.sql in your database
+2.  run sql > schema.sql, schema_ins.sql, schema_upd.sql in your database
 
-Example:
-
-    psql -d{database} -U{user} -W -f schema.sql
-
-#### notes
-
-For Ubuntu add host (-h127.0.0.1) to psql:
-
-    psql -d{database} -U{user} -h127.0.0.1 -W -f schema.sql
 
 ## Running Server
 
