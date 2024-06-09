@@ -1,40 +1,31 @@
-# DIS fianl project: Fridge Master
+DIS fianl project: Fridge Master 
+================================
+
 ## Summary
+
 Fridge_Master is python & Django based recipe recommendating website. Unlike existing recipe sharing sites, Fridge_Master focuses more on users by gathering data about groceries. Each user can become both publisher and reader as registering the groceries they bought or uploading their own recipes on the website.
 
     git repository: https://github.com/goeunP/FridgeMaster
 
-* * *
-
-
 ## Database init
-1. set the database in fridge_master > settings.py > "DATABASES"
-Example: 
 
-    change into your name, user, password
-   {
-   'NAME':'name of your database',
-   'USER':'user name of that database',
-   'PASSWORD':'password of that database'
-   }
+1.  set the database in fridge_master > settings.py > "DATABASES"
+    Example:
 
-2. run schema.sql, schema_ins.sql, schema_upd.sql in your database
-3. run sql_ddl/ddl-customers-001-add.sql in your database.
+        change into your name, user, password
 
-Example: 
+    {
+    'NAME':'name of your database',
+    'USER':'user name of that database',
+    'PASSWORD':'password of that database'
+    }
 
-    psql -d{database} -U{user} -W -f schema.sql
-   
-#### notes
-For Ubuntu add host (-h127.0.0.1) to psql: 
+2.  run sql > schema.sql, schema_ins.sql, schema_upd.sql in your database
 
-    psql -d{database} -U{user} -h127.0.0.1 -W -f schema.sql
 
-## Running Server
-#### 1.OSX: 
+## Server init
 
-    python manage.py runserver
-
+#### 1.OSX:
 
 Create virtual environment in folder
 
@@ -43,7 +34,6 @@ Create virtual environment in folder
 Activate virtual environment in folder
 
     . .venv/bin/activate
-
 
 #### 2.WINDOWS:
 
@@ -58,6 +48,14 @@ Activate virtual environment in folder
 ### Install Django
 
     pip install django
-    
+
     pip install psycopg2
+
+### Create a new migration & committed the new migration to DB
+    python manage.py makemigrations
+    
+    python manage.py migrate
+
+### Run server 
+      python manage.py runserver
 
