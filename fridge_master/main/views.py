@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect
 import re
 from django.http import JsonResponse, HttpResponse
-from .models import users, recipes
+from .models import users, recipes, publish
+from datetime import datetime
 # Create your views here.
 def index(request):
     return render(request,'main/index.html')
@@ -45,12 +46,17 @@ def create(request):
     data["user_name"] = user_name
    
     if request.method=='POST':
-        recipe_id=request.POST['recipe_id']
-        # print('레시피 id', recipe_id)
-        recipes.objects.create(recipe_id=recipe_id)
+        new_re_id=int(recipes.objects.all().last().re_id)+1
+        print('마지막 id', new_re_id)
+
+        re_name=request.POST['re_name']
+        cur_publisher=users.objects.get(user_name=user_name).user_mail
+        newPublish=publish(pub_id=new_re_id, pub_date=datetime.now(), pub_publisher=users(user_mail=cur_publisher))
+        # newPublish.save()
+        newRecipe=recipes(re_id=new_re_id, re_name=re_name, re_step="{일번, 이번, 삼번}", re_minute=4)
+        # newRecipe.save()
         return HttpResponse("<script>alert('success');""location.href='/home/';</script>")
     elif request.method=='GET':
-        # print('유저', Users.objects.all()[2].user_name)
         return render(request,'create/create.html', data)
 
 def detail(request, re_id):
