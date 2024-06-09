@@ -1,4 +1,5 @@
-# DIS fianl project: Fridge Master
+DIS fianl project: Fridge Master 
+================================
 
 ## Summary
 
@@ -22,11 +23,9 @@ Fridge_Master is python & Django based recipe recommendating website. Unlike exi
 2.  run sql > schema.sql, schema_ins.sql, schema_upd.sql in your database
 
 
-## Running Server
+## Server init
 
 #### 1.OSX:
-
-    python manage.py runserver
 
 Create virtual environment in folder
 
@@ -56,3 +55,6 @@ Activate virtual environment in folder
     python manage.py makemigrations
     
     python manage.py migrate
+
+### Run server 
+      python manage.py runserver
