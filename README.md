@@ -8,7 +8,7 @@ Fridge_Master is python & Django based recipe recommendating website. Unlike exi
 
     git repository: https://github.com/goeunP/FridgeMaster
 
-*** 🚨🚨🚨 Recommendation : Use OSX 🚨🚨🚨 ***
+***🚨🚨🚨 Recommendation : Use OSX 🚨🚨🚨***
 
 - - - 
 
