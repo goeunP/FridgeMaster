@@ -77,6 +77,8 @@ WSGI_APPLICATION = "fridge_master.wsgi.application"
 
 
 
+
+# !!!!!!!!!!!!!!!!!!!!!!  CHANGE HERE !!!!!!!!!!!!!!!!!!
 DATABASES={
     'default':{
         'ENGINE':'django.db.backends.postgresql',
@@ -87,6 +89,7 @@ DATABASES={
         'PORT':'5432',
     }
 }
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 

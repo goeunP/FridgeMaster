@@ -1,5 +1,4 @@
-DIS fianl project: Fridge Master 
-================================
+# DIS fianl project: Fridge Master
 
 ## Summary
 
@@ -21,7 +20,6 @@ Fridge_Master is python & Django based recipe recommendating website. Unlike exi
     }
 
 2.  run sql > schema.sql, schema_ins.sql, schema_upd.sql in your database
-
 
 ## Server init
 
@@ -52,9 +50,11 @@ Activate virtual environment in folder
     pip install psycopg2
 
 ### Create a new migration & committed the new migration to DB
+
     python manage.py makemigrations
-    
+
     python manage.py migrate
 
-### Run server 
-      python manage.py runserver
+### Run server
+
+    python manage.py runserver
