@@ -57,5 +57,5 @@ Activate virtual environment in folder
     python manage.py migrate
 
 ### Run server 
-      python manage.py runserver
+    python manage.py runserver
 
