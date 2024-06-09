@@ -1,11 +1,16 @@
 DIS fianl project: Fridge Master 
 ================================
+> 🍎 Goeun Park, Chaehyun Kim 🍏
 
 ## Summary
 
 Fridge_Master is python & Django based recipe recommendating website. Unlike existing recipe sharing sites, Fridge_Master focuses more on users by gathering data about groceries. Each user can become both publisher and reader as registering the groceries they bought or uploading their own recipes on the website.
 
     git repository: https://github.com/goeunP/FridgeMaster
+
+*** 🚨🚨🚨 Recommendation : Use OSX 🚨🚨🚨 ***
+
+- - - 
 
 ## Database init
 
